@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #476F7F, #001D3F);
+    height: 100%;
+}
+
+div.calendar {
+    margin: auto;
+    margin-top: 50px;
+    width: 990px;
+}
+
+div.month-year {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+div.month-year h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+div.month-year a {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+div.month-year img {
+    margin-bottom: -15px;
+}
+
+div.week-days {
+    display: flex;
+    justify-content: center;
+}
+
+div.week-days .days {
+    padding: 20px;
+    width: 300px;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.numDays {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+div.numDays .nums {
+    padding: 20px;
+    width: 8vw;
+    height: 8vw;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #346072;
+    justify-content: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+}
+
+div.numDays .nums:hover{
+    background-color: #001D3F;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    padding: 68px;
+}
+
+div.numDays .nums p.numsDays {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: rgb(219, 217, 217);
+    text-shadow: 2px 2px 2px black;
+}
+
+div.numDays .nums p.wDays{
+    color: rgb(219, 217, 217);
+    text-shadow: 2px 2px 2px black;
+}
+
+div.numDaysExtra {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+}
+
+div.numDaysExtra .nums {
+    padding: 20px;
+    width: 8vw;
+    height: 8vw;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #346072;
+    justify-content: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+}
+
+div.numDaysExtra .nums:hover{
+    background-color: #001D3F;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    padding: 68px;
+}
+
+div.numDaysExtra .nums p.numsDays {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: rgb(219, 217, 217);
+    text-shadow: 2px 2px 2px black;
+}
+
+div.numDaysExtra .nums p.wDays{
+    color: rgb(219, 217, 217);
+    text-shadow: 2px 2px 2px black;
+}
