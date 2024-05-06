@@ -1,54 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*Aqui importamos a fonte do projeto.*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+*{ /*Aqui definimos o reset do CSS*/
+    margin: 0; /*Aqui zeramos a margem pré-definida pelo navegador.*/
+    padding: 0; /*Aqui zeramos o acolchoamento pré-definido pelo navegador.*/
+    box-sizing: border-box; /*Aqui definimos que a borda fará parte da caixa e não será um elemento separado.*/
+    font-family: 'Poppins', sans-serif; /*Aqui chamamos a fonte que importamos anteriormente.*/
+    text-decoration: none; /*Aqui definimos que nenhum texto do site terá decoração a menos que pedirmos em algum seletor depois.*/
 }
 
-body {
-    background-image: linear-gradient(to bottom, #476F7F, #001D3F);
-    height: 100%;
+body { /*Seletor do corpo do site.*/
+    background-image: linear-gradient(to bottom, #476F7F, #001D3F); /*Aqui definimos o gradiente de fundo.*/
+    height: 100%; /*Aqui definimos que a altura do site será de 100%*/
 }
 
-div.calendar {
-    margin: auto;
-    margin-top: 50px;
-    width: 990px;
+div.calendar { /*Aqui definimos a área do calendário.*/
+    margin: auto; /*Aqui centralizamos o calendário.*/
+    margin-top: 50px; /*Aqui aumentamos a margem de cima do calendário.*/
+    width: 990px; /*Aqui definimos a largura do calendário.*/
 }
 
-div.month-year {
-    display: flex;
-    gap:20px;
-    justify-content: center;
-    margin-bottom: 20px;
+div.month-year { /*Aqui definimos os estilos do título com o mês e o ano.*/
+    display: flex; /*Chamamos o flexbox.*/
+    gap:20px; /*Aqui definimos o gap entre o cabeçalho do calendário.*/
+    justify-content: center; /*Aqui usamos do flexbox para centralizar a div.*/
+    margin-bottom: 20px; /*Aqui damos uma margem para baixo da div.*/
 }
 
-div.month-year h1 {
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px black;
+div.month-year h1 { /*Aqui estilizamos o h1 (Janeiro, Fevereiro, etc.)*/
+    text-align: center; /*Aqui alinhamos o texto no meio da tela.*/
+    color: white; /*Aqui definimos a cor do texto.*/
+    text-shadow: 2px 2px 2px black; /*Aqui definimos a sombra para o texto.*/
 }
 
-div.month-year a {
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px black;
+div.month-year a { /*Aqui estilizamos as setas para avançar ou voltar o calendário.*/
+    color: white; /*Definimos a cor.*/
+    font-size: 2em; /*Aqui definimos o tamanho da fonte usando a medida em.*/
+    font-weight: bold; /*Aqui definimos que esse texto ficará em negrito.*/
+    text-shadow: 2px 2px 2px black; /*Aqui definimos a sombra para o texto.*/
 }
 
-div.month-year img {
+div.month-year img { /*Aqui alinhamos as setas com o texto do mês e ano.*/
     margin-bottom: -15px;
 }
 
-div.week-days {
+div.week-days { /*Aqui centralizamos os dias da semanas nas suas divs.*/
     display: flex;
     justify-content: center;
 }
 
-div.week-days .days {
+div.week-days .days { /*Aqui alinhamos mais uma div.*/
     padding: 20px;
     width: 300px;
     align-items: center;
@@ -56,7 +56,7 @@ div.week-days .days {
     text-align: center;
 }
 
-div.numDays {
+div.numDays { /*Mais um alinhamento de div.*/
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -64,47 +64,47 @@ div.numDays {
 
 div.numDays .nums {
     padding: 20px;
-    width: 8vw;
-    height: 8vw;
+    width: 8vw; /*Aqui definimos que os quadrados com os dias do calendário teram sempre 8% da largura da tela com a medida vw (view width).*/
+    height: 8vw; /*Aqui definimos que os quadrados com os dias do calendário teram sempre 8% da largura da tela com a medida vw (height width).*/
     text-align: center;
     padding: 40px;
     display: flex;
-    align-items: center;
+    align-items: center; /*Alinhamento de elementos.*/
     background-color: #346072;
-    justify-content: center;
+    justify-content: center; /*Alinhamento de elementos.*/
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    display: flex; /*Aqui chamamos o flexbox.*/
+    flex-direction: column; /*Aqui mudamos a direção do flex box para coluna. O padrão é sempre row (linha)*/
+    border-radius: 10px; /*Aqui aredondamos a borda das caixas.*/
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75); /*Damos uma sombra pra caixa*/
 }
 
-div.numDays .nums:hover{
+div.numDays .nums:hover{ /*Aqui definimos o que irá acontecer quando alguém passar o mouse em cima das caixas.*/
     background-color: #001D3F;
-    transition: 0.3s ease-in;
-    cursor: pointer;
-    padding: 68px;
+    transition: 0.3s ease-in; /*Aqui criamos um efeito de transição para o hover.*/
+    cursor: pointer; /*Aqui o cursor estará apontando como se fosse um link*/
+    padding: 68px; /*Aqui a grosso modo fazemos os quadrados aumentarem quando o usuário passar o mouse.*/
 }
 
-div.numDays .nums p.numsDays {
+div.numDays .nums p.numsDays { /*Aqui definimos o estilo dos números dos dias.*/
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.4em; /*Novamente usamos o em para definir o tamanho da fonte*/
     color: rgb(219, 217, 217);
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black; /*Aqui novamente uma sombra de texto*/
 }
 
 div.numDays .nums p.wDays{
     color: rgb(219, 217, 217);
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black; /*Aqui novamente uma sombra de texto*/
 }
 
-div.numDaysExtra {
+div.numDaysExtra { /*Aqui criamos uma forma de alinhar uma possível sexta linha para meses que possuam 6 linhas*/
     display: flex;
     gap: 10px;
     justify-content: left;
 }
 
-div.numDaysExtra .nums {
+div.numDaysExtra .nums { /*Aqui repassamos o estilos das caixas para o caso do mês ter seis linhas*/
     padding: 20px;
     width: 8vw;
     height: 8vw;
@@ -121,21 +121,21 @@ div.numDaysExtra .nums {
     box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
 }
 
-div.numDaysExtra .nums:hover{
+div.numDaysExtra .nums:hover{ /*Aqui repassamos o estilos do hover das caixas para o caso do mês ter seis linhas*/
     background-color: #001D3F;
     transition: 0.3s ease-in;
     cursor: pointer;
     padding: 68px;
 }
 
-div.numDaysExtra .nums p.numsDays {
+div.numDaysExtra .nums p.numsDays { /*Aqui repassamos o estilos dos números das caixas para o caso do mês ter seis linhas*/
     font-weight: bold;
     font-size: 1.4em;
     color: rgb(219, 217, 217);
     text-shadow: 2px 2px 2px black;
 }
 
-div.numDaysExtra .nums p.wDays{
+div.numDaysExtra .nums p.wDays{ /*Aqui repassamos o estilos dos dias da semana das caixas para o caso do mês ter seis linhas*/
     color: rgb(219, 217, 217);
     text-shadow: 2px 2px 2px black;
 }

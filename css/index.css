@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*Importamos a fonte do projeto*/
 
-*{
+*{ /*Reset do CSS do navegador*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,30 +8,30 @@
 }
 
 body {
-    background-image: url('https://images3.alphacoders.com/589/thumb-1920-589870.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('https://images3.alphacoders.com/589/thumb-1920-589870.jpg'); /*Uso da propriedade url do background para usar uma imagem que está hospedada em outro site como fundo.*/
+    background-repeat: no-repeat; /*Por padrão, um background se repete até formar a altura e a largura do site, porém com essa declaração dizemos que ele não deve se repetir.*/
+    background-size: cover; /*Aqui dizemos para o background cobrir toda a página*/
 }
 
 h1 {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black; /*Aqui novamente uma sombra de texto*/
 }
 
 p {
-    text-align: justify;
+    text-align: justify; /*Aqui dizemos que o parágrafo deve ser justificado*/
     width: 900px;
-    margin: auto;
+    margin: auto; /*Aqui centralizamos todos os parágrafos do site.*/
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black; /*Aqui novamente uma sombra de texto*/
 }
 
 p#tech {
-    text-align: center;
+    text-align: center; /*Aqui alinhamos no centro da tela APENAS o parágrafo que contém as tecnologias que utilizamos para fazer o site.*/
 }
 
-.card {
+.card { /*Aqui definimos o estilo do cartão do site*/
     background-color: rgba(0, 0, 0, 0.568);
     width: 500px;
     height: 500px;
@@ -41,20 +41,21 @@ p#tech {
     border-radius: 15px;
     box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.75);
 }
-.card ul {
+.card ul { /* Aqui fica o estilo da lista dos meses*/
     text-align: center;
-    list-style: none;
+    list-style: none; /*Aqui dizemos que não queremos nenhum estilo de lista. (as bolinhas que ficam no ínicio de toda a lista)*/
 }
 
 .card ul li a {
-    text-decoration: none;
+    text-decoration: none; /*Aqui removemos o underline dos links*/
     color: white;
     font-weight: bold;
     font-size: 1.2em;
     text-shadow: 2px 2px 2px black;
+    text-transform: uppercase; /*Essa é uma declaração que diz que esse texto tem que ficar em letras maiúsculas*/
 }
 
-.card ul li a:hover {
+.card ul li a:hover { /*Aqui dizemos o que deve acontecer quando o usuário passar o mouse em cima de algum item da lista (no caso aqui acontece uma inversão das cores, onde o que era preto fica branco e o que era branco fica preto.)*/
     color: black;
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 2px 2px 2px white; /*Aqui novamente uma sombra de texto*/
 }
