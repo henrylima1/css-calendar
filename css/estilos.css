@@ -65,7 +65,7 @@ div.numDays { /*Mais um alinhamento de div.*/
 div.numDays .nums {
     padding: 20px;
     width: 8vw; /*Aqui definimos que os quadrados com os dias do calendário teram sempre 8% da largura da tela com a medida vw (view width).*/
-    height: 8vw; /*Aqui definimos que os quadrados com os dias do calendário teram sempre 8% da largura da tela com a medida vw (height width).*/
+    height: 8vw; /*Aqui definimos que os quadrados com os dias do calendário teram sempre 8% da altura da tela com a medida vw (height width).*/
     text-align: center;
     padding: 40px;
     display: flex;
